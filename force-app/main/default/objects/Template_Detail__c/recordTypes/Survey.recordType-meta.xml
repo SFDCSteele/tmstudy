@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey</fullName>
+    <active>true</active>
+    <label>Survey</label>
+    <picklistValues>
+        <picklist>Subtype__c</picklist>
+        <values>
+            <fullName>Clinician Administered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self-Report</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

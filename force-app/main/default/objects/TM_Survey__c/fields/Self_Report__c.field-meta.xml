@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Self_Report__c</fullName>
+    <externalId>false</externalId>
+    <label>Self Report</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Surveys</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>PCL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>PHQ-9</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <valueName>Demographics/Medical history</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <valueName>Life Events Checklist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>Craving Experience</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>Insomnia Severity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>Nightmare Severity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>Nightmare Frequency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <valueName>Treatment Preference</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <valueName>Credibility/Expectancy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>quality of life (SF-36)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>Client Satisfaction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>Meditation Regularity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>Treatment Adherence</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

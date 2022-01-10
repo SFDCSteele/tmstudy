@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CAPS</fullName>
+        <default>false</default>
+        <label>CAPS</label>
+    </customValue>
+    <customValue>
+        <fullName>PCL</fullName>
+        <default>false</default>
+        <label>PCL</label>
+    </customValue>
+    <customValue>
+        <fullName>PHQ-9</fullName>
+        <default>false</default>
+        <label>PHQ-9</label>
+    </customValue>
+    <customValue>
+        <fullName>MINI</fullName>
+        <default>false</default>
+        <label>MINI</label>
+    </customValue>
+    <customValue>
+        <fullName>C-SSRS</fullName>
+        <default>false</default>
+        <label>C-SSRS</label>
+    </customValue>
+    <customValue>
+        <fullName>Demographics/Medical history</fullName>
+        <default>false</default>
+        <label>Demographics/Medical history</label>
+    </customValue>
+    <customValue>
+        <fullName>Life Events Checklist</fullName>
+        <default>false</default>
+        <label>Life Events Checklist</label>
+    </customValue>
+    <customValue>
+        <fullName>Timeline FV</fullName>
+        <default>false</default>
+        <label>Timeline FV</label>
+    </customValue>
+    <customValue>
+        <fullName>Craving Experience</fullName>
+        <default>false</default>
+        <label>Craving Experience</label>
+    </customValue>
+    <customValue>
+        <fullName>SLUMS</fullName>
+        <default>false</default>
+        <label>SLUMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Insomnia Severity</fullName>
+        <default>false</default>
+        <label>Insomnia Severity</label>
+    </customValue>
+    <customValue>
+        <fullName>Nightmare Severity</fullName>
+        <default>false</default>
+        <label>Nightmare Severity</label>
+    </customValue>
+    <customValue>
+        <fullName>Nightmare Frequency</fullName>
+        <default>false</default>
+        <label>Nightmare Frequency</label>
+    </customValue>
+    <customValue>
+        <fullName>Client Satisfaction</fullName>
+        <default>false</default>
+        <label>Client Satisfaction</label>
+    </customValue>
+    <customValue>
+        <fullName>Treatment Preference</fullName>
+        <default>false</default>
+        <label>Treatment Preference</label>
+    </customValue>
+    <customValue>
+        <fullName>Credibility/Expectancy</fullName>
+        <default>false</default>
+        <label>Credibility/Expectancy</label>
+    </customValue>
+    <customValue>
+        <fullName>Adverse Events</fullName>
+        <default>false</default>
+        <label>Adverse Events</label>
+    </customValue>
+    <customValue>
+        <fullName>Meditation Regularity</fullName>
+        <default>false</default>
+        <label>Meditation Regularity</label>
+    </customValue>
+    <customValue>
+        <fullName>Treatment Adherence</fullName>
+        <default>false</default>
+        <label>Treatment Adherence</label>
+    </customValue>
+    <customValue>
+        <fullName>quality of life (SF-36)</fullName>
+        <default>false</default>
+        <label>quality of life (SF-36)</label>
+    </customValue>
+    <customValue>
+        <fullName>Cost Effect</fullName>
+        <default>false</default>
+        <label>Cost Effect</label>
+    </customValue>
+    <customValue>
+        <fullName>Biomarkers</fullName>
+        <default>false</default>
+        <label>Biomarkers</label>
+    </customValue>
+    <description>All Surveys Used in Study</description>
+    <masterLabel>Surveys</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <decisions>
+        <description>If Session Subtype = TM Instruction, also set the TM Intro date on the Study Participant Object.  For any other subtype, just set the last Checking Date.</description>
+        <name>Check_Session_Type</name>
+        <label>Check Session Type</label>
+        <locationX>256</locationX>
+        <locationY>375</locationY>
+        <defaultConnector>
+            <targetReference>Update_Parent_Checking_Date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Subtype &lt;&gt; TM Instruction</defaultConnectorLabel>
+        <rules>
+            <name>Subtype_TM_Instruction</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Session_Subtype__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>TM Instruction</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_TM_Instruction_and_Last_Chking_Dt</targetReference>
+            </connector>
+            <label>Subtype = TM Instruction</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>Today_Date</name>
+        <dataType>Date</dataType>
+        <expression>Today()</expression>
+    </formulas>
+    <interviewLabel>Set Study Participant Dates Based on Surveys {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set Study Participant Dates Based on Surveys</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Parent_Checking_Date</name>
+        <label>Update Last Checking Date Only</label>
+        <locationX>75</locationX>
+        <locationY>552</locationY>
+        <filterLogic>1</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Subject__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Last_Checking__c</field>
+            <value>
+                <elementReference>$Record.Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Study_Participant__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_TM_Instruction_and_Last_Chking_Dt</name>
+        <label>Update TM Instruction and Last Chking Dt</label>
+        <locationX>449</locationX>
+        <locationY>548</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Subject__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Last_Checking__c</field>
+            <value>
+                <elementReference>$Record.Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TM_Inst_Date__c</field>
+            <value>
+                <elementReference>$Record.Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Study_Participant__c</object>
+    </recordUpdates>
+    <start>
+        <locationX>140</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Check_Session_Type</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Completed__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>TM_Session__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

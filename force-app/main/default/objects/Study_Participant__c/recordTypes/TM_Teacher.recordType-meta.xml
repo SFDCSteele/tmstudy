@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TM_Teacher</fullName>
+    <active>true</active>
+    <label>TM Teacher</label>
+    <picklistValues>
+        <picklist>Phone_Screen_Result__c</picklist>
+        <values>
+            <fullName>Eligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ineligible</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Interested</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referral_Track__c</picklist>
+        <values>
+            <fullName>Community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Within VA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Complete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Session</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Study_Site__c</picklist>
+        <values>
+            <fullName>Boston VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bronx VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DC VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denver VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palo Alto VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Diego VA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subject_Type__c</picklist>
+        <values>
+            <fullName>PCT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

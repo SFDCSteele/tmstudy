@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clinician_Administered__c</fullName>
+    <externalId>false</externalId>
+    <label>Clinician Administered</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Surveys</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>CAPS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>MINI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>C-SSRS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 2</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 3</controllingFieldValue>
+            <valueName>Timeline FV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <valueName>SLUMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <valueName>Adverse Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <valueName>Cost Effect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Survey</controllingFieldValue>
+            <controllingFieldValue>Post-Survey 1</controllingFieldValue>
+            <valueName>Biomarkers</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>
